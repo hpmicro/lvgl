@@ -86,7 +86,7 @@ lv_obj_t* lv_rlottie_create_from_raw(lv_obj_t* parent, lv_coord_t width, lv_coor
 
 static void lv_rlottie_constructor(const lv_obj_class_t * class_p, lv_obj_t * obj)
 {
-
+    LV_UNUSED(class_p);
     lv_rlottie_t * rlottie = (lv_rlottie_t *) obj;
 
     if(rlottie_desc_create) {
@@ -131,7 +131,7 @@ static void lv_rlottie_constructor(const lv_obj_class_t * class_p, lv_obj_t * ob
 
 static void lv_rlottie_destructor(const lv_obj_class_t * class_p, lv_obj_t* obj)
 {
-
+    LV_UNUSED(class_p);
     lv_rlottie_t * rlottie = (lv_rlottie_t *) obj;
 
     if (rlottie->animation) {
